@@ -23,8 +23,8 @@ export default function About() {
               <div className="grid lg:grid-cols-2 gap-0">
                 <div className="relative h-96 lg:h-auto">
                   <Image
-                    src="/images/philosophy/horse-connection.jpeg"
-                    alt="Equine connection and training"
+                    src="/images/about/maria-lucy.jpg"
+                    alt="Maria-Lucy Neason - Lead Instructor & Equine Behavior Specialist"
                     fill
                     className="object-cover"
                   />
@@ -78,7 +78,7 @@ export default function About() {
               <div className="grid lg:grid-cols-2 gap-0">
                 <div className="lg:order-2 relative h-96 lg:h-auto">
                   <Image
-                    src="/images/about/ursula-bell.jpeg"
+                    src="/images/Ursula.JPG"
                     alt="Ursula Maria Bell - Systemic Constellation Facilitator"
                     fill
                     className="object-cover"
@@ -133,8 +133,8 @@ export default function About() {
               <div className="grid lg:grid-cols-2 gap-0">
                 <div className="relative h-96 lg:h-auto">
                   <Image
-                    src="/horses/IMG_3948.jpeg"
-                    alt="Equine facilitated therapy"
+                    src="/images/about/kate.jpg"
+                    alt="Kate Bickerstaff - Senior ACCPH Member & Equine-Facilitated Therapist"
                     fill
                     className="object-cover"
                   />

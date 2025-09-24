@@ -64,7 +64,16 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-300">
-              <li>info@equillation.com</li>
+              <li>
+                <a href="tel:+447470369948" className="hover:text-white transition-colors">
+                  07470 369948
+                </a>
+              </li>
+              <li>
+                <a href="mailto:info@equillation.com" className="hover:text-white transition-colors">
+                  info@equillation.com
+                </a>
+              </li>
               <li>Remote & On-site Training</li>
               <li>Response within 24-48 hours</li>
             </ul>
