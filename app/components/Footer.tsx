@@ -70,8 +70,14 @@ export default function Footer() {
               © 2025 Equillation. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+              <a 
+                href="/All policies FINAL DOCUMENT.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                Policies & Terms
+              </a>
             </div>
           </div>
           
