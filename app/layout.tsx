@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://equillation.vercel.app'),
   title: 'Equillation - Equine Facilitated Constellations',
   description: 'Fostering authentic connection and collaboration with horses through respectful, distance-based equine facilitated constellations training.',
   keywords: 'equine facilitated, horse training, constellation work, natural horsemanship, horse therapy',
@@ -11,20 +12,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://equillation.com',
+    url: 'https://equillation.vercel.app',
     siteName: 'Equillation',
     title: 'Equillation - Equine Facilitated Constellations',
     description: 'Fostering authentic connection and collaboration with horses through respectful, distance-based equine facilitated constellations training.',
     images: [
       {
         url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Equillation Logo - Equine Facilitated Constellations',
-        type: 'image/jpeg',
-      },
-      {
-        url: '/images/logos/equillation-logo.jpg',
         width: 1200,
         height: 630,
         alt: 'Equillation Logo - Equine Facilitated Constellations',
