@@ -65,6 +65,9 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-300">
               <li>
+                <span className="text-sm">Contact Kate on:</span>
+              </li>
+              <li>
                 <a href="tel:+447470369948" className="hover:text-white transition-colors">
                   07470 369948
                 </a>
