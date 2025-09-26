@@ -179,7 +179,7 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
+                    <h4 className="font-semibold text-gray-900 mb-1">Contact Kate on:</h4>
                     <p className="text-gray-600">
                       <a href="tel:+447470369948" className="hover:text-primary-600 transition-colors">
                         07470 369948
