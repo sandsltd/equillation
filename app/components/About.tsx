@@ -18,10 +18,65 @@ export default function About() {
           {/* Team Members Grid */}
           <div className="space-y-12">
             
-            {/* Maria-Lucy Neason */}
+            {/* Kate Bickerstaff - Founder */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <div className="grid lg:grid-cols-2 gap-0">
                 <div className="relative h-96 lg:h-auto">
+                  <Image
+                    src="/images/about/kate.jpg"
+                    alt="Kate Bickerstaff - Founder & Senior ACCPH Member"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                </div>
+                <div className="p-8 lg:p-12">
+                  <div className="mb-6">
+                    <h3 className="text-3xl font-serif font-bold text-gray-900 mb-2">
+                      Kate Bickerstaff
+                    </h3>
+                    <p className="text-lg text-sage-600 font-medium mb-4">
+                      Founder & Senior ACCPH Member
+                    </p>
+                  </div>
+                  <div className="space-y-4 text-gray-600 leading-relaxed mb-8">
+                    <p>
+                      Kate is the <strong>founder of Equillation</strong>, whose practice weaves together equine-facilitated therapy, 
+                      systemic constellations, and nature-based healing. Her work is rooted in reverence for both human and equine 
+                      wisdom, guided by her horse <strong>Topper</strong> since 2012.
+                    </p>
+                    <p>
+                      As a <strong>Senior Member of the ACCPH</strong> and Athena-accredited practitioner, 
+                      Kate has been pioneering equine-facilitated constellations for six years, 
+                      developing Equillation's unique approach with her dedicated team.
+                    </p>
+                  </div>
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    <div className="bg-sage-50 rounded-lg p-4">
+                      <h4 className="font-semibold text-gray-900 mb-2">Qualifications</h4>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>• BSc (Hons) Psychology</li>
+                        <li>• Level 5 Counselling</li>
+                        <li>• Equine Facilitated Psychotherapy</li>
+                      </ul>
+                    </div>
+                    <div className="bg-earth-50 rounded-lg p-4">
+                      <h4 className="font-semibold text-gray-900 mb-2">Specializations</h4>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>• Constellation Therapy</li>
+                        <li>• Reiki & Energy Healing</li>
+                        <li>• Nature-based Healing</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Maria-Lucy Neason */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+              <div className="grid lg:grid-cols-2 gap-0">
+                <div className="lg:order-2 relative h-96 lg:h-auto">
                   <Image
                     src="/images/about/maria-lucy.jpg"
                     alt="Maria-Lucy Neason - Lead Instructor & Equine Behavior Specialist"
@@ -30,7 +85,7 @@ export default function About() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 </div>
-                <div className="p-8 lg:p-12">
+                <div className="lg:order-1 p-8 lg:p-12">
                   <div className="mb-6">
                     <h3 className="text-3xl font-serif font-bold text-gray-900 mb-2">
                       Maria-Lucy Neason
@@ -76,7 +131,7 @@ export default function About() {
             {/* Ursula Maria Bell */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <div className="grid lg:grid-cols-2 gap-0">
-                <div className="lg:order-2 relative h-96 lg:h-auto">
+                <div className="relative h-96 lg:h-auto">
                   <Image
                     src="/images/Ursula.JPG"
                     alt="Ursula Maria Bell - Systemic Constellation Facilitator"
@@ -85,7 +140,7 @@ export default function About() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 </div>
-                <div className="lg:order-1 p-8 lg:p-12">
+                <div className="p-8 lg:p-12">
                   <div className="mb-6">
                     <h3 className="text-3xl font-serif font-bold text-gray-900 mb-2">
                       Ursula Maria Bell
@@ -127,61 +182,6 @@ export default function About() {
                 </div>
               </div>
             </div>
-
-            {/* Kate Bickerstaff */}
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="grid lg:grid-cols-2 gap-0">
-                <div className="relative h-96 lg:h-auto">
-                  <Image
-                    src="/images/about/kate.jpg"
-                    alt="Kate Bickerstaff - Senior ACCPH Member & Equine-Facilitated Therapist"
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                </div>
-                <div className="p-8 lg:p-12">
-                  <div className="mb-6">
-                    <h3 className="text-3xl font-serif font-bold text-gray-900 mb-2">
-                      Kate Bickerstaff
-                    </h3>
-                    <p className="text-lg text-sage-600 font-medium mb-4">
-                      Senior ACCPH Member & Equine-Facilitated Therapist
-                    </p>
-                  </div>
-                  <div className="space-y-4 text-gray-600 leading-relaxed mb-8">
-                    <p>
-                      Kate's practice weaves together equine-facilitated therapy, systemic constellations, 
-                      and nature-based healing. Her work is rooted in reverence for both human and equine 
-                      wisdom, guided by her horse <strong>Topper</strong> since 2012.
-                    </p>
-                    <p>
-                      As a <strong>Senior Member of the ACCPH</strong> and Athena-accredited practitioner, 
-                      Kate has been working in equine-facilitated constellations for six years, 
-                      co-creating Equillation's unique approach.
-                    </p>
-                  </div>
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div className="bg-sage-50 rounded-lg p-4">
-                      <h4 className="font-semibold text-gray-900 mb-2">Qualifications</h4>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        <li>• BSc (Hons) Psychology</li>
-                        <li>• Level 5 Counselling</li>
-                        <li>• Equine Facilitated Psychotherapy</li>
-                      </ul>
-                    </div>
-                    <div className="bg-earth-50 rounded-lg p-4">
-                      <h4 className="font-semibold text-gray-900 mb-2">Specializations</h4>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        <li>• Constellation Therapy</li>
-                        <li>• Reiki & Energy Healing</li>
-                        <li>• Nature-based Healing</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Team Mission Statement */}
@@ -190,12 +190,12 @@ export default function About() {
               Our Collaborative Vision
             </h3>
             <p className="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto mb-6">
-              Together, Maria-Lucy, Ursula, and Kate have co-created Equillation—a unique way of working 
-              that honours the horse at every step and ensures their needs, freedom, and natural instincts 
-              remain central to our practice.
+              Founded by Kate and developed collaboratively with Maria-Lucy and Ursula, Equillation represents 
+              a unique way of working that honours the horse at every step and ensures their needs, freedom, 
+              and natural instincts remain central to our practice.
             </p>
             <p className="text-gray-700 font-medium">
-              We bring together professional knowledge, spiritual insight, and lived experience to guide 
+              Together, we bring professional knowledge, spiritual insight, and lived experience to guide 
               both individuals and practitioners on their journeys of growth, connection, and transformation.
             </p>
           </div>
