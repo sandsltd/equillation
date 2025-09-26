@@ -30,6 +30,7 @@ export default function Header() {
             <a href="#about" className="text-gray-700 hover:text-primary-600 transition-colors">About</a>
             <a href="#philosophy" className="text-gray-700 hover:text-primary-600 transition-colors">Philosophy</a>
             <a href="#training" className="text-gray-700 hover:text-primary-600 transition-colors">Training</a>
+            <a href="#training-programs" className="text-gray-700 hover:text-primary-600 transition-colors">Programmes</a>
             <a href="#contact" className="btn-primary">Contact</a>
           </div>
 
@@ -54,6 +55,7 @@ export default function Header() {
               <a href="#about" className="text-gray-700 hover:text-primary-600 transition-colors">About</a>
               <a href="#philosophy" className="text-gray-700 hover:text-primary-600 transition-colors">Philosophy</a>
               <a href="#training" className="text-gray-700 hover:text-primary-600 transition-colors">Training</a>
+              <a href="#training-programs" className="text-gray-700 hover:text-primary-600 transition-colors">Programmes</a>
               <a href="#contact" className="text-primary-600 font-medium">Contact</a>
             </div>
           </div>

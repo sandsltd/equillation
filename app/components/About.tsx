@@ -46,7 +46,7 @@ export default function About() {
                       wisdom, guided by her horse <strong>Topper</strong> since 2012.
                     </p>
                     <p>
-                      As a <strong>Senior Member of the ACCPH</strong> and Athena-accredited practitioner, 
+                      As a <strong>Senior Member of the ACCPH</strong> and on the <strong>Accredited Practitioners Register with Athena</strong>, 
                       Kate has been pioneering equine-facilitated constellations for six years, 
                       developing Equillation's unique approach with her dedicated team.
                     </p>
@@ -64,7 +64,7 @@ export default function About() {
                       <h4 className="font-semibold text-gray-900 mb-2">Specializations</h4>
                       <ul className="text-sm text-gray-600 space-y-1">
                         <li>• Constellation Therapy</li>
-                        <li>• Reiki & Energy Healing</li>
+                        <li>• Equine Facilitated Constellations</li>
                         <li>• Nature-based Healing</li>
                       </ul>
                     </div>
