@@ -1287,6 +1287,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.hover\:text-primary-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(47 99 90 / var(--tw-text-opacity, 1));
+}
+
 .focus\:border-primary-500:focus {
   --tw-border-opacity: 1;
   border-color: rgb(69 150 136 / var(--tw-border-opacity, 1));

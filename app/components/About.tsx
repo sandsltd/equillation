@@ -65,6 +65,16 @@ export default function About() {
                       <li>• Nature-based Healing</li>
                     </ul>
                   </div>
+                  <div className="text-center">
+                    <a 
+                      href="https://www.thoughtsandsoul.co.uk" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-primary-600 hover:text-primary-700 text-xs font-medium transition-colors"
+                    >
+                      Visit Kate's Website →
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -116,6 +126,16 @@ export default function About() {
                       <li>• Affective Neuroscience</li>
                     </ul>
                   </div>
+                  <div className="text-center">
+                    <a 
+                      href="https://www.truenorthequinecoaching.co.uk" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-primary-600 hover:text-primary-700 text-xs font-medium transition-colors"
+                    >
+                      Visit Maria-Lucy's Website →
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -166,6 +186,16 @@ export default function About() {
                       <li>• International trainer</li>
                       <li>• Published author</li>
                     </ul>
+                  </div>
+                  <div className="text-center">
+                    <a 
+                      href="https://www.ursulamariabell.com/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-primary-600 hover:text-primary-700 text-xs font-medium transition-colors"
+                    >
+                      Visit Ursula's Website →
+                    </a>
                   </div>
                 </div>
               </div>
