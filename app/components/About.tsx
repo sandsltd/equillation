@@ -5,218 +5,54 @@ export default function About() {
     <section id="about" className="section-padding bg-gradient-to-br from-sage-50 to-primary-50">
       <div className="container-custom">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-6">
-              Meet Our Team
-            </h2>
-            <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-              Our dedicated professionals bring decades of experience in equine education, 
-              constellation work, therapy, and ethical training approaches.
-            </p>
-          </div>
-
-          {/* Team Members Grid - Compact Cards */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            {/* Kate Bickerstaff - Founder */}
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="relative h-64">
-                <Image
-                  src="/images/about/kate.jpg"
-                  alt="Kate Bickerstaff - Founder & Senior ACCPH Member"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+          {/* About Equillation */}
+          <div className="bg-gradient-to-br from-white to-sage-50 rounded-3xl p-8 lg:p-12 mb-16 shadow-lg border border-sage-100">
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-600 rounded-full mb-6">
+                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
+                </svg>
               </div>
-              <div className="p-6">
-                <div className="mb-4">
-                  <h3 className="text-xl font-serif font-bold text-gray-900 mb-1">
-                    Kate Bickerstaff
-                  </h3>
-                  <p className="text-sm text-sage-600 font-medium mb-3">
-                    Founder & Senior ACCPH Member
-                  </p>
-                </div>
-                <div className="space-y-3 text-sm text-gray-600 leading-relaxed mb-6">
-                  <p>
-                    Kate is the <strong>founder of Equillation</strong>, whose practice weaves together equine-facilitated therapy, 
-                    systemic constellations, and nature-based healing.
-                  </p>
-                  <p>
-                    As a <strong>Senior Member of the ACCPH</strong> and on the <strong>Accredited Practitioners Register with Athena</strong>, 
-                    Kate has been pioneering equine-facilitated constellations for six years.
-                  </p>
-                </div>
-                <div className="space-y-3">
-                  <div className="bg-sage-50 rounded-lg p-3">
-                    <h4 className="font-semibold text-gray-900 mb-2 text-sm">Qualifications</h4>
-                    <ul className="text-xs text-gray-600 space-y-1">
-                      <li>• BSc (Hons) Psychology</li>
-                      <li>• Level 5 Counselling</li>
-                      <li>• Equine Facilitated Psychotherapy</li>
-                    </ul>
-                  </div>
-                  <div className="bg-earth-50 rounded-lg p-3">
-                    <h4 className="font-semibold text-gray-900 mb-2 text-sm">Specializations</h4>
-                    <ul className="text-xs text-gray-600 space-y-1">
-                      <li>• Constellation Therapy</li>
-                      <li>• Equine Facilitated Constellations</li>
-                      <li>• Nature-based Healing</li>
-                    </ul>
-                  </div>
-                  <div className="text-center">
-                    <a 
-                      href="https://www.thoughtsandsoul.co.uk" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-primary-600 hover:text-primary-700 text-xs font-medium transition-colors"
-                    >
-                      Visit Kate's Website →
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <h2 className="text-4xl font-serif font-bold text-gray-900 mb-4">
+                About Equillation
+              </h2>
+              <div className="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
             </div>
-
-            {/* Maria-Lucy Neason */}
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="relative h-64">
-                <Image
-                  src="/images/about/maria-lucy.jpg"
-                  alt="Maria-Lucy Neason - Lead Instructor & Equine Behavior Specialist"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-              </div>
-              <div className="p-6">
-                <div className="mb-4">
-                  <h3 className="text-xl font-serif font-bold text-gray-900 mb-1">
-                    Maria-Lucy Neason
-                  </h3>
-                  <p className="text-sm text-primary-700 font-medium mb-3">
-                    Lead Instructor & Equine Behavior Specialist
+            <div className="max-w-5xl mx-auto">
+              <div className="grid lg:grid-cols-2 gap-8 mb-8">
+                <div>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    Equillation honours the wisdom of horses and the power of systemic constellations as a path to healing and transformation. The training blends academic depth, experiential learning, and personal growth, while always prioritising ethical practice and equine welfare.
                   </p>
                 </div>
-                <div className="space-y-3 text-sm text-gray-600 leading-relaxed mb-6">
-                  <p>
-                    Maria-Lucy is a <strong>British Horse Society Accredited Professional Coach (Level IV)</strong> with 
-                    over 30 years of experience in the equestrian industry.
+                <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                  <p className="text-lg text-gray-700 leading-relaxed font-medium">
+                    This is more than a qualification – it is an invitation into a supportive community, where students grow in confidence, presence, and professional integrity.
                   </p>
-                  <p>
-                    She is a certified <strong>Connection Training coach</strong> and is currently undertaking 
-                    further study with COAPE in the MHERA Licensed Practitioners Course.
-                  </p>
-                </div>
-                <div className="space-y-3">
-                  <div className="bg-primary-50 rounded-lg p-3">
-                    <h4 className="font-semibold text-gray-900 mb-2 text-sm">Education</h4>
-                    <ul className="text-xs text-gray-600 space-y-1">
-                      <li>• Master's in Equine Studies</li>
-                      <li>• BHS Level IV Coach</li>
-                      <li>• 15+ years in Higher Ed</li>
-                    </ul>
-                  </div>
-                  <div className="bg-sage-50 rounded-lg p-3">
-                    <h4 className="font-semibold text-gray-900 mb-2 text-sm">Specializations</h4>
-                    <ul className="text-xs text-gray-600 space-y-1">
-                      <li>• Connection Training</li>
-                      <li>• Equine Ethology</li>
-                      <li>• Affective Neuroscience</li>
-                    </ul>
-                  </div>
-                  <div className="text-center">
-                    <a 
-                      href="https://www.truenorthequinecoaching.co.uk" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-primary-600 hover:text-primary-700 text-xs font-medium transition-colors"
-                    >
-                      Visit Maria-Lucy's Website →
-                    </a>
-                  </div>
                 </div>
               </div>
-            </div>
-
-            {/* Ursula Maria Bell */}
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="relative h-64">
-                <Image
-                  src="/images/Ursula.JPG"
-                  alt="Ursula Maria Bell - Systemic Constellation Facilitator"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-              </div>
-              <div className="p-6">
-                <div className="mb-4">
-                  <h3 className="text-xl font-serif font-bold text-gray-900 mb-1">
-                    Ursula Maria Bell
-                  </h3>
-                  <p className="text-sm text-earth-600 font-medium mb-3">
-                    Systemic Constellation Facilitator & Trainer
+              
+              {/* Our Collaborative Vision */}
+              <div className="bg-gradient-to-r from-primary-50 to-sage-50 rounded-2xl p-8 border border-primary-100">
+                <h3 className="text-2xl font-serif font-semibold text-gray-900 mb-6 text-center">
+                  Our Collaborative Vision
+                </h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <p className="text-gray-700 leading-relaxed">
+                    Founded by Kate and developed collaboratively with Maria-Lucy and Ursula, Equillation represents 
+                    a unique way of working that honours the horse at every step and ensures their needs, freedom, 
+                    and natural instincts remain central to our practice.
                   </p>
-                </div>
-                <div className="space-y-3 text-sm text-gray-600 leading-relaxed mb-6">
-                  <p>
-                    Ursula is a qualified systemic constellation facilitator, trainer, and supervisor with 
-                    <strong> over 15 years of experience</strong> in transgenerational healing.
+                  <p className="text-gray-700 leading-relaxed">
+                    Together, we bring professional knowledge, spiritual insight, and lived experience to guide 
+                    both individuals and practitioners on their journeys of growth, connection, and transformation.
                   </p>
-                  <p>
-                    German by origin and now based in Bulgaria, she holds a Diploma in <strong>Viktor Frankl's 
-                    Logotherapy</strong> and advanced diplomas in Transpersonal Therapy.
-                  </p>
-                </div>
-                <div className="space-y-3">
-                  <div className="bg-earth-50 rounded-lg p-3">
-                    <h4 className="font-semibold text-gray-900 mb-2 text-sm">Qualifications</h4>
-                    <ul className="text-xs text-gray-600 space-y-1">
-                      <li>• Logotherapy Diploma</li>
-                      <li>• Transpersonal Therapy</li>
-                      <li>• Counselling Supervision Level VII</li>
-                    </ul>
-                  </div>
-                  <div className="bg-primary-50 rounded-lg p-3">
-                    <h4 className="font-semibold text-gray-900 mb-2 text-sm">Experience</h4>
-                    <ul className="text-xs text-gray-600 space-y-1">
-                      <li>• 1,000+ constellations</li>
-                      <li>• International trainer</li>
-                      <li>• Published author</li>
-                    </ul>
-                  </div>
-                  <div className="text-center">
-                    <a 
-                      href="https://www.ursulamariabell.com/" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-primary-600 hover:text-primary-700 text-xs font-medium transition-colors"
-                    >
-                      Visit Ursula's Website →
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Team Mission Statement */}
-          <div className="mt-16 text-center bg-white rounded-2xl p-8 lg:p-12 shadow-sm">
-            <h3 className="text-2xl font-serif font-semibold text-gray-900 mb-6">
-              Our Collaborative Vision
-            </h3>
-            <p className="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto mb-6">
-              Founded by Kate and developed collaboratively with Maria-Lucy and Ursula, Equillation represents 
-              a unique way of working that honours the horse at every step and ensures their needs, freedom, 
-              and natural instincts remain central to our practice.
-            </p>
-            <p className="text-gray-700 font-medium">
-              Together, we bring professional knowledge, spiritual insight, and lived experience to guide 
-              both individuals and practitioners on their journeys of growth, connection, and transformation.
-            </p>
-          </div>
+
         </div>
       </div>
     </section>

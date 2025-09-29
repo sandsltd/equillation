@@ -53,8 +53,8 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><a href="#home" className="text-gray-300 hover:text-white transition-colors">Home</a></li>
-              <li><a href="#training-programs" className="text-gray-300 hover:text-white transition-colors">Training Course</a></li>
               <li><a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a></li>
+              <li><a href="#training-programs" className="text-gray-300 hover:text-white transition-colors">Diploma</a></li>
               <li><a href="#philosophy" className="text-gray-300 hover:text-white transition-colors">Philosophy</a></li>
               <li><a href="#training" className="text-gray-300 hover:text-white transition-colors">Our Approach</a></li>
               <li><a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>

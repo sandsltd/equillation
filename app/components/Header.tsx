@@ -27,8 +27,8 @@ export default function Header() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <a href="#home" className="text-gray-700 hover:text-primary-600 transition-colors">Home</a>
-            <a href="#training-programs" className="text-gray-700 hover:text-primary-600 transition-colors">Training Course</a>
             <a href="#about" className="text-gray-700 hover:text-primary-600 transition-colors">About</a>
+            <a href="#training-programs" className="text-gray-700 hover:text-primary-600 transition-colors">Diploma</a>
             <a href="#philosophy" className="text-gray-700 hover:text-primary-600 transition-colors">Philosophy</a>
             <a href="#training" className="text-gray-700 hover:text-primary-600 transition-colors">Our Approach</a>
             <a href="#contact" className="btn-primary">Contact</a>
@@ -52,8 +52,8 @@ export default function Header() {
           <div className="md:hidden py-4 border-t border-gray-100">
             <div className="flex flex-col space-y-4">
               <a href="#home" className="text-gray-700 hover:text-primary-600 transition-colors">Home</a>
-              <a href="#training-programs" className="text-gray-700 hover:text-primary-600 transition-colors">Training Course</a>
               <a href="#about" className="text-gray-700 hover:text-primary-600 transition-colors">About</a>
+              <a href="#training-programs" className="text-gray-700 hover:text-primary-600 transition-colors">Diploma</a>
               <a href="#philosophy" className="text-gray-700 hover:text-primary-600 transition-colors">Philosophy</a>
               <a href="#training" className="text-gray-700 hover:text-primary-600 transition-colors">Our Approach</a>
               <a href="#contact" className="text-primary-600 font-medium">Contact</a>
