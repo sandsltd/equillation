@@ -294,7 +294,7 @@ export default function TrainingPrograms() {
                       </ul>
                     </div>
                     <div className="bg-earth-50 rounded-lg p-3">
-                      <h4 className="font-semibold text-gray-900 mb-2 text-sm">Specializations</h4>
+                      <h4 className="font-semibold text-gray-900 mb-2 text-sm">Specialisations</h4>
                       <ul className="text-xs text-gray-600 space-y-1">
                         <li>• Constellation Therapy</li>
                         <li>• Equine Facilitated Constellations</li>
@@ -320,7 +320,7 @@ export default function TrainingPrograms() {
                 <div className="relative h-64">
                   <Image
                     src="/images/about/maria-lucy.jpg"
-                    alt="Maria-Lucy Neason - Lead Instructor & Equine Behavior Specialist"
+                    alt="Maria-Lucy Neason - Lead Instructor & Equine Behaviour Specialist"
                     fill
                     className="object-cover"
                   />
@@ -332,7 +332,7 @@ export default function TrainingPrograms() {
                       Maria-Lucy Neason
                     </h3>
                     <p className="text-sm text-primary-700 font-medium mb-3">
-                      Lead Instructor & Equine Behavior Specialist
+                      Lead Instructor & Equine Behaviour Specialist
                     </p>
                   </div>
                   <div className="space-y-3 text-sm text-gray-600 leading-relaxed mb-6">
@@ -355,7 +355,7 @@ export default function TrainingPrograms() {
                       </ul>
                     </div>
                     <div className="bg-sage-50 rounded-lg p-3">
-                      <h4 className="font-semibold text-gray-900 mb-2 text-sm">Specializations</h4>
+                      <h4 className="font-semibold text-gray-900 mb-2 text-sm">Specialisations</h4>
                       <ul className="text-xs text-gray-600 space-y-1">
                         <li>• Connection Training</li>
                         <li>• Equine Ethology</li>
