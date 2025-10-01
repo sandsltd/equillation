@@ -19,13 +19,10 @@ export default function Philosophy() {
                 Honoring Natural Wisdom
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Horses can be overlooked, treated as tools or commodities rather than honoured 
-                for their natural wisdom and sensitivity. Too often, the subtle and non-verbal 
-                language of horses can go unnoticed.
+                At Equillation, we begin by listening to the horse. Their subtle signals, gentle presence, and non-verbal language guide the way. By meeting them in their own space — grazing, resting, or interacting freely with their herd — we allow their natural wisdom to come forward.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                When these quiet signals are overlooked, we miss the chance for deeper connection, 
-                mutual respect, and genuine understanding between human and horse.
+                This way of working is built on respect, choice, and connection. When horses are free to be themselves, they show us what is true in the moment and open the door to deeper healing, mutual understanding, and authentic partnership.
               </p>
             </div>
             <div className="bg-gradient-to-br from-sage-100 to-primary-100 rounded-2xl p-8">

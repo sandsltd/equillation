@@ -261,7 +261,7 @@ export default function TrainingPrograms() {
                     src="/images/about/kate.jpg"
                     alt="Kate Bickerstaff - Founder & Senior ACCPH Member"
                     fill
-                    className="object-cover"
+                    className="object-cover object-[center_20%]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 </div>
@@ -271,7 +271,7 @@ export default function TrainingPrograms() {
                       Kate Bickerstaff
                     </h3>
                     <p className="text-sm text-sage-600 font-medium mb-3">
-                      Founder & Senior ACCPH Member
+                      Founder
                     </p>
                   </div>
                   <div className="space-y-3 text-sm text-gray-600 leading-relaxed mb-6">
@@ -281,7 +281,7 @@ export default function TrainingPrograms() {
                     </p>
                     <p>
                       As a <strong>Senior Member of the ACCPH</strong> and on the <strong>Accredited Practitioners Register with Athena</strong>, 
-                      Kate has been pioneering equine-facilitated constellations for six years.
+                      Kate has been pioneering equine-facilitated constellations with a deep commitment to ethical practice.
                     </p>
                   </div>
                   <div className="space-y-3">
@@ -332,34 +332,32 @@ export default function TrainingPrograms() {
                       Maria-Lucy Neason
                     </h3>
                     <p className="text-sm text-primary-700 font-medium mb-3">
-                      Lead Instructor & Equine Behaviour Specialist
+                      Lecturer and Module Leader Equine Behaviour
                     </p>
                   </div>
                   <div className="space-y-3 text-sm text-gray-600 leading-relaxed mb-6">
                     <p>
-                      Maria-Lucy is a <strong>British Horse Society Accredited Professional Coach (Level IV)</strong> with 
-                      over 30 years of experience in the equestrian industry.
+                      Maria-Lucy is an experienced equine educator with a long career as an equine coach and lecturer in equine studies. She has taught a wide range of subjects combining academic knowledge with extensive practical experience.
                     </p>
                     <p>
-                      She is a certified <strong>Connection Training coach</strong> and is currently undertaking 
-                      further study with COAPE in the MHERA Licensed Practitioners Course.
+                      She is a certified <strong>Connection Training Coach</strong> with a particular interest in equine emotions and behaviour, exploring how horses learn, communicate, and thrive when training methods are evidence based and rooted in compassion and empathy.
                     </p>
                   </div>
                   <div className="space-y-3">
                     <div className="bg-primary-50 rounded-lg p-3">
                       <h4 className="font-semibold text-gray-900 mb-2 text-sm">Education</h4>
                       <ul className="text-xs text-gray-600 space-y-1">
-                        <li>• Master's in Equine Studies</li>
+                        <li>• MSc in Equine Studies</li>
+                        <li>• Certificate in Education (lecturing qualification)</li>
                         <li>• BHS Level IV Coach</li>
-                        <li>• 15+ years in Higher Ed</li>
                       </ul>
                     </div>
                     <div className="bg-sage-50 rounded-lg p-3">
                       <h4 className="font-semibold text-gray-900 mb-2 text-sm">Specialisations</h4>
                       <ul className="text-xs text-gray-600 space-y-1">
                         <li>• Connection Training</li>
-                        <li>• Equine Ethology</li>
-                        <li>• Affective Neuroscience</li>
+                        <li>• Equine Emotions and behaviour</li>
+                        <li>• Equine husbandry and management</li>
                       </ul>
                     </div>
                     <div className="text-center">
