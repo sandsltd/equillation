@@ -3,12 +3,12 @@ import nodemailer from 'nodemailer'
 
 export async function POST(request: Request) {
   try {
-    const { name, email, interest, message } = await request.json()
+    const { name, email, phone, interest, message } = await request.json()
 
     // Validation
-    if (!name || !email || !message) {
+    if (!name || !email || !phone || !message) {
       return NextResponse.json(
-        { error: 'Name, email, and message are required' },
+        { error: 'Name, email, phone number, and message are required' },
         { status: 400 }
       )
     }
@@ -58,6 +58,7 @@ New Contact Form Submission from Equillation Website
 
 Name: ${name}
 Email: ${email}
+Phone: ${phone}
 Area of Interest: ${interest || 'Not specified'}
 
 Message:
@@ -98,6 +99,10 @@ Sent from: ${process.env.NEXT_PUBLIC_SITE_URL || 'Equillation Website'}
           <tr>
             <td style="padding: 8px 0; font-weight: 600; color: #374151;">Email:</td>
             <td style="padding: 8px 0; color: #6b7280;"><a href="mailto:${email}" style="color: #459688; text-decoration: none;">${email}</a></td>
+          </tr>
+          <tr>
+            <td style="padding: 8px 0; font-weight: 600; color: #374151;">Phone:</td>
+            <td style="padding: 8px 0; color: #6b7280;"><a href="tel:${phone}" style="color: #459688; text-decoration: none;">${phone}</a></td>
           </tr>
           <tr>
             <td style="padding: 8px 0; font-weight: 600; color: #374151;">Interest:</td>

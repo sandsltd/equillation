@@ -6,6 +6,7 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     interest: '',
     message: ''
   })
@@ -28,7 +29,7 @@ export default function Contact() {
 
       if (response.ok) {
         setSubmitStatus('success')
-        setFormData({ name: '', email: '', interest: '', message: '' })
+        setFormData({ name: '', email: '', phone: '', interest: '', message: '' })
       } else {
         setSubmitStatus('error')
       }
@@ -92,6 +93,21 @@ export default function Contact() {
                     onChange={handleChange}
                     className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
                     placeholder="your.email@example.com"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                    Phone Number
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
+                    placeholder="Your phone number"
                     required
                   />
                 </div>
