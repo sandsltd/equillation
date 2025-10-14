@@ -84,7 +84,30 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Professional Certifications */}
         <div className="border-t border-gray-800 mt-12 pt-8">
+          <div className="text-center mb-8">
+            <h3 className="text-lg font-semibold text-white mb-4">Professional Certifications</h3>
+            <div className="flex justify-center">
+              <div className="flex flex-col items-center space-y-2">
+                <div className="relative w-24 h-16">
+                  <Image
+                    src="/images/logos/AAHEP-PSA-Member-Primary-Logo-Light-1024x296.jpg"
+                    alt="AAHEP PSA Member Logo"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <div className="text-center">
+                  <p className="text-sm font-medium text-white">AAHEP PSA Member</p>
+                  <p className="text-xs text-gray-400">Professional Standards Association</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center mb-6">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
               © 2025 Equillation. All rights reserved.
@@ -105,8 +128,8 @@ export default function Footer() {
           <div className="border-t border-gray-800 pt-6 text-center">
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-3">
               <span className="text-gray-400 text-sm">Website designed and built by</span>
-              <div className="flex items-center space-x-2">
-                <div className="relative w-6 h-6">
+              <div className="flex items-center space-x-3">
+                <div className="relative w-12 h-8">
                   <Image
                     src="/saunderssimmons.png"
                     alt="Saunders Simmons Ltd"
