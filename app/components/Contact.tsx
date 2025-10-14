@@ -8,7 +8,12 @@ export default function Contact() {
     email: '',
     phone: '',
     interest: '',
-    message: ''
+    message: '',
+    // Course registration fields
+    whyCourse: '',
+    qualifications: '',
+    profession: '',
+    horseExperience: ''
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
@@ -29,7 +34,17 @@ export default function Contact() {
 
       if (response.ok) {
         setSubmitStatus('success')
-        setFormData({ name: '', email: '', phone: '', interest: '', message: '' })
+        setFormData({ 
+          name: '', 
+          email: '', 
+          phone: '', 
+          interest: '', 
+          message: '',
+          whyCourse: '',
+          qualifications: '',
+          profession: '',
+          horseExperience: ''
+        })
       } else {
         setSubmitStatus('error')
       }
@@ -126,9 +141,81 @@ export default function Contact() {
                     <option value="training">Training Programmes</option>
                     <option value="workshops">Workshops</option>
                     <option value="consultation">Consultation</option>
+                    <option value="course-registration">Register for Course</option>
                     <option value="general">General Inquiry</option>
                   </select>
                 </div>
+                {/* Course Registration Fields - Only show when "Register for Course" is selected */}
+                {formData.interest === 'course-registration' && (
+                  <div className="space-y-6 p-6 bg-sage-50 rounded-lg border border-sage-200">
+                    <h4 className="text-lg font-semibold text-gray-900 mb-4">Course Registration Details</h4>
+                    
+                    <div>
+                      <label htmlFor="whyCourse" className="block text-sm font-medium text-gray-700 mb-2">
+                        Why would you like to do this course? *
+                      </label>
+                      <textarea
+                        id="whyCourse"
+                        name="whyCourse"
+                        rows={3}
+                        value={formData.whyCourse}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors resize-none"
+                        placeholder="Please tell us about your motivation for taking this course..."
+                        required={formData.interest === 'course-registration'}
+                      ></textarea>
+                    </div>
+
+                    <div>
+                      <label htmlFor="qualifications" className="block text-sm font-medium text-gray-700 mb-2">
+                        Qualifications *
+                      </label>
+                      <textarea
+                        id="qualifications"
+                        name="qualifications"
+                        rows={3}
+                        value={formData.qualifications}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors resize-none"
+                        placeholder="Please list your relevant qualifications and certifications..."
+                        required={formData.interest === 'course-registration'}
+                      ></textarea>
+                    </div>
+
+                    <div>
+                      <label htmlFor="profession" className="block text-sm font-medium text-gray-700 mb-2">
+                        Profession *
+                      </label>
+                      <input
+                        type="text"
+                        id="profession"
+                        name="profession"
+                        value={formData.profession}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
+                        placeholder="Your current profession or field of work"
+                        required={formData.interest === 'course-registration'}
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="horseExperience" className="block text-sm font-medium text-gray-700 mb-2">
+                        Experience with Horses *
+                      </label>
+                      <textarea
+                        id="horseExperience"
+                        name="horseExperience"
+                        rows={3}
+                        value={formData.horseExperience}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors resize-none"
+                        placeholder="Please describe your experience working with horses..."
+                        required={formData.interest === 'course-registration'}
+                      ></textarea>
+                    </div>
+                  </div>
+                )}
+
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                     Message

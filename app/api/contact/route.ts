@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer'
 
 export async function POST(request: Request) {
   try {
-    const { name, email, phone, interest, message } = await request.json()
+    const { name, email, phone, interest, message, whyCourse, qualifications, profession, horseExperience } = await request.json()
 
     // Validation
     if (!name || !email || !phone || !message) {
@@ -64,6 +64,21 @@ Area of Interest: ${interest || 'Not specified'}
 Message:
 ${message}
 
+${interest === 'course-registration' ? `
+--- COURSE REGISTRATION DETAILS ---
+Why they want to do this course:
+${whyCourse || 'Not provided'}
+
+Qualifications:
+${qualifications || 'Not provided'}
+
+Profession:
+${profession || 'Not provided'}
+
+Experience with Horses:
+${horseExperience || 'Not provided'}
+` : ''}
+
 ---
 Please respond to: ${email}
 Sent from: ${process.env.NEXT_PUBLIC_SITE_URL || 'Equillation Website'}
@@ -110,6 +125,30 @@ Sent from: ${process.env.NEXT_PUBLIC_SITE_URL || 'Equillation Website'}
           </tr>
         </table>
       </div>
+      
+      ${interest === 'course-registration' ? `
+      <div style="background-color: #fef3c7; padding: 24px; border-radius: 8px; border-left: 4px solid #f59e0b; margin-bottom: 24px;">
+        <h2 style="color: #374151; margin: 0 0 16px 0; font-size: 18px;">🎓 Course Registration Details</h2>
+        <table style="width: 100%; border-collapse: collapse;">
+          <tr>
+            <td style="padding: 8px 0; font-weight: 600; color: #374151; width: 140px;">Why Course:</td>
+            <td style="padding: 8px 0; color: #6b7280; white-space: pre-wrap;">${whyCourse || 'Not provided'}</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px 0; font-weight: 600; color: #374151; width: 140px;">Qualifications:</td>
+            <td style="padding: 8px 0; color: #6b7280; white-space: pre-wrap;">${qualifications || 'Not provided'}</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px 0; font-weight: 600; color: #374151; width: 140px;">Profession:</td>
+            <td style="padding: 8px 0; color: #6b7280;">${profession || 'Not provided'}</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px 0; font-weight: 600; color: #374151; width: 140px;">Horse Experience:</td>
+            <td style="padding: 8px 0; color: #6b7280; white-space: pre-wrap;">${horseExperience || 'Not provided'}</td>
+          </tr>
+        </table>
+      </div>
+      ` : ''}
       
       <div style="margin-bottom: 24px;">
         <h2 style="color: #374151; margin: 0 0 16px 0; font-size: 18px;">Message</h2>
