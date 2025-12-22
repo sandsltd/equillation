@@ -23,7 +23,7 @@ export default function TrainingPrograms() {
                   <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  Level 5 Diploma (In Process of Accreditation)
+                  Level 5 Diploma (Accredited by the AAHEP)
                 </div>
                 <h3 className="text-3xl font-serif font-bold text-gray-900 mb-6">
                   Diploma in Equine Systemic Constellations
