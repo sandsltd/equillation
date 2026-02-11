@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server'
-import * as postmark from 'postmark'
-
+import { Resend } from 'resend';
 export async function POST(request: Request) {
   try {
     const { name, email, phone, interest, message, whyCourse, qualifications, profession, horseExperience } = await request.json()
@@ -31,13 +30,13 @@ export async function POST(request: Request) {
     }
 
     // Create Postmark client
-    const client = new postmark.ServerClient(process.env.POSTMARK_API_TOKEN)
+    const resend = new Resend(process.env.RESEND_API_KEY)
 
     // Email to business (notification)
     const businessEmailContent = `
 New Contact Form Submission from Equillation Website
 
-Name: ${name}
+filename: ${name}
 Email: ${email}
 Phone: ${phone}
 Area of Interest: ${interest || 'Not specified'}
@@ -89,7 +88,7 @@ Sent from: ${process.env.NEXT_PUBLIC_SITE_URL || 'Equillation Website'}
         <h2 style="color: #374151; margin: 0 0 20px 0; font-size: 18px;">Contact Details</h2>
         <table style="width: 100%; border-collapse: collapse;">
           <tr>
-            <td style="padding: 8px 0; font-weight: 600; color: #374151; width: 140px;">Name:</td>
+            <td style="padding: 8px 0; font-weight: 600; color: #374151; width: 140px;">filename:</td>
             <td style="padding: 8px 0; color: #6b7280;">${name}</td>
           </tr>
           <tr>
@@ -221,18 +220,18 @@ Sent from: ${process.env.NEXT_PUBLIC_SITE_URL || 'Equillation Website'}
     // Send both emails
     try {
       await Promise.all([
-        client.sendEmail({
-          From: fromAddress,
-          To: businessTo,
-          Subject: `New Contact Form Submission - ${name}`,
-          TextBody: businessEmailContent,
-          HtmlBody: businessEmailHTML,
+        resend.emails.send({
+          from: 'web@saunders-simmons.co.uk',
+          to: businessTo,
+          subject: `New Contact Form Submission - ${name}`,
+          text: businessEmailContent,
+          html: businessEmailHTML,
         }),
-        client.sendEmail({
-          From: fromAddress,
-          To: email,
-          Subject: 'Thank you for contacting Equillation',
-          HtmlBody: customerEmailHTML,
+        resend.emails.send({
+          from: 'web@saunders-simmons.co.uk',
+          to: email,
+          subject: 'Thank you for contacting Equillation',
+          html: customerEmailHTML,
         })
       ])
 
