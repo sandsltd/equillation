@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import nodemailer from 'nodemailer'
+import * as postmark from 'postmark'
 
 export async function POST(request: Request) {
   try {
@@ -22,35 +22,16 @@ export async function POST(request: Request) {
     }
 
     // Check if environment variables are set
-    if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
-      console.error('Missing SMTP environment variables')
+    if (!process.env.POSTMARK_API_TOKEN) {
+      console.error('Missing Postmark environment variables')
       return NextResponse.json(
         { error: 'Email service configuration error' },
         { status: 500 }
       )
     }
 
-    // Create transporter
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: parseInt(process.env.SMTP_PORT || '465'),
-      secure: true, // true for 465, false for other ports like 587
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
-      },
-    })
-
-    // Verify transporter
-    try {
-      await transporter.verify()
-    } catch (verifyError) {
-      console.error('SMTP transporter verification failed:', verifyError)
-      return NextResponse.json(
-        { error: 'Email service connection error' },
-        { status: 500 }
-      )
-    }
+    // Create Postmark client
+    const client = new postmark.ServerClient(process.env.POSTMARK_API_TOKEN!)
 
     // Email to business (notification)
     const businessEmailContent = `
@@ -234,27 +215,23 @@ Sent from: ${process.env.NEXT_PUBLIC_SITE_URL || 'Equillation Website'}
 </html>
     `
 
-    // Email options
-    const businessMailOptions = {
-      from: process.env.CONTACT_EMAIL_FROM || process.env.SMTP_USER,
-      to: `${process.env.CONTACT_EMAIL_TO || 'info@equillation.com'}, hello@saunders-simmons.co.uk`,
-      subject: `New Contact Form Submission - ${name}`,
-      text: businessEmailContent,
-      html: businessEmailHTML,
-    }
-
-    const customerMailOptions = {
-      from: process.env.CONTACT_EMAIL_FROM || process.env.SMTP_USER,
-      to: email,
-      subject: 'Thank you for contacting Equillation',
-      html: customerEmailHTML,
-    }
-
     // Send both emails
     try {
       await Promise.all([
-        transporter.sendMail(businessMailOptions),
-        transporter.sendMail(customerMailOptions)
+        client.sendEmail({
+          From: process.env.CONTACT_EMAIL_FROM || 'info@equillation.com',
+          To: `${process.env.CONTACT_EMAIL_TO || 'info@equillation.com'}, hello@saunders-simmons.co.uk`,
+          Subject: `New Contact Form Submission - ${name}`,
+          TextBody: businessEmailContent,
+          HtmlBody: businessEmailHTML,
+        }),
+        client.sendEmail({
+          From: process.env.CONTACT_EMAIL_FROM || 'info@equillation.com',
+          To: email,
+          Subject: 'Thank you for contacting Equillation',
+          TextBody: '',
+          HtmlBody: customerEmailHTML,
+        })
       ])
 
       console.log('Emails sent successfully to:', businessMailOptions.to, 'and', email)
