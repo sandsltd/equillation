@@ -1,4 +1,4 @@
-// File: /Users/nick/Documents/code/resenedsetup/equillation/app/page.tsx
+// File: /Users/nick/Documents/code/equilation/app/page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

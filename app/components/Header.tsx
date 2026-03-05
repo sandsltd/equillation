@@ -32,6 +32,7 @@ export default function Header() {
             <a href="#philosophy" className="text-gray-700 hover:text-primary-600 transition-colors">Philosophy</a>
             <a href="#training" className="text-gray-700 hover:text-primary-600 transition-colors">Our Approach</a>
             <a href="#contact" className="btn-primary">Contact</a>
+            <a href="https://courses.thinkific.com/onboarding/signin" target="_blank" rel="noopener noreferrer" className="btn-secondary">Student Login</a>
           </div>
 
           {/* Mobile menu button */}
@@ -57,6 +58,7 @@ export default function Header() {
               <a href="#philosophy" className="text-gray-700 hover:text-primary-600 transition-colors">Philosophy</a>
               <a href="#training" className="text-gray-700 hover:text-primary-600 transition-colors">Our Approach</a>
               <a href="#contact" className="text-primary-600 font-medium">Contact</a>
+              <a href="https://courses.thinkific.com/onboarding/signin" target="_blank" rel="noopener noreferrer" className="text-primary-600 font-medium">Student Login</a>
             </div>
           </div>
         )}
