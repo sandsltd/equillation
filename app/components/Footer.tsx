@@ -108,20 +108,10 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center mb-6">
+          <div className="flex flex-col md:flex-row items-center mb-6">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
               © 2025 Equillation. All rights reserved.
             </p>
-            <div className="flex space-x-6 text-sm">
-              <a 
-                href="/All policies FINAL DOCUMENT.pdf" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                Policies & Terms
-              </a>
-            </div>
           </div>
           
           {/* Website Credit */}
